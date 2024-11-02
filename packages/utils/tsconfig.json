@@ -1,0 +1,8 @@
+{
+    //继承外部规则
+    "extends":"../../tsconfig.json",
+    "compilerOptions": {
+
+    },
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+}

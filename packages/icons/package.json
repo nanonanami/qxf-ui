@@ -1,0 +1,37 @@
+{
+  "name": "@qxf-ui-study/icons",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "this is a icons package",
+  "author": "nanonanami <ns244444@163.com>",
+  "license": "MIT",
+  "keywords": [
+    "vue",
+    "vue3",
+    "icons"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./es/index.d.ts",
+      "import": "./es/index.js",
+      "require": "./lib/index.js"
+    },
+    "./es/*": "./es/*",
+    "./dist/*": "./dist/*",
+    "./lib/*": "./lib/*",
+    "./package.json": "./package.json"
+  },
+  "main": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "dist",
+    "es",
+    "lib"
+  ],
+  "scripts": {
+    "build": "vite build"
+  }
+}

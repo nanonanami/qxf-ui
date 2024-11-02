@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "jsx": "preserve",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "paths": {
+      "@qxf-ui-study/utils":[
+        "packages/utils/src"
+      ],
+      "@qxf-ui-study/icons":[
+        "packages/icons/src"
+      ],
+      "qxf-ui":[
+        "packages/qxf-ui/src"
+      ],
+      "qxf-ui/*":[
+        "packages/qxf-ui/src/*"
+      ]
+    },
+    "types":[
+      "vitest/globals"
+    ],
+
+    "allowImportingTsExtensions": true,
+    /* Bundler mode */
+    //"moduleDetection": "force",
+    "jsxImportSource":"vue",
+
+    /* Linting */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    //"noUncheckedSideEffectImports": true.
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.node.json" },
+    { "path": "./tsconfig.vitepress.json" }
+  ]
+}
